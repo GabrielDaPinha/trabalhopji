@@ -1,0 +1,96 @@
+:root {
+    --bg-dark: #0a0e1a;
+    --bg-card: #0f172a;
+    --primary-blue: #3b82f6;
+    --secondary-blue: #1e40af;
+    --text-white: #ffffff;
+    --text-gray: #94a3b8;
+    --accent-blue: #60a5fa;
+}
+
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-white);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+.bg-dark, 
+.dropdown-menu {
+    background-color: #0f172a !important;
+}
+
+
+.hero-fixed {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(10, 14, 26, 0.8), rgba(10, 14, 26, 0.8)), 
+                url('https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Seção de Sobreposição (Cards) */
+.overlap-section {
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    background-color: var(--bg-dark);
+}
+
+.feature-card {
+    background-color: var(--bg-card);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.stats-custom {
+    background-color: rgba(30, 64, 175, 0.1);
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 80px 0;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: var(--text-gray);
+    margin-bottom: 0;
+}
+
+
+.text-primary-emphasis {
+    color: var(--accent-blue) !important;
+}
