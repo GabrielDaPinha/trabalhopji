@@ -117,3 +117,8 @@ body {
     background-color: #1f6feb;
     border-color: #1f6feb;
 }
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
