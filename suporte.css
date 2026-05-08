@@ -122,3 +122,16 @@ body {
     border-color: transparent;
     box-shadow: none;
 }
+/*AJUSTE NO SUPORTE (BORDA AZUL E TEXTO)*/
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+    color: #6c757d !important;
+    background-color: transparent !important;
+    opacity: 0.8;
+}
+
+
+.form-floating > label::after {
+    background-color: transparent !important;
+}
